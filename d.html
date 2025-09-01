@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiyalX - Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      margin-top: 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 1.1em;
+      opacity: 0.8;
+    }
+
+    .socials {
+      margin: 20px 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .socials a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .socials a:hover img {
+      transform: scale(1.2);
+    }
+
+    .song-section {
+      margin: 30px 0;
+    }
+
+    .song-section img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .song-section audio {
+      margin-top: 15px;
+      width: 300px;
+    }
+
+    .pay-button {
+      display: inline-block;
+      margin: 25px 0;
+      padding: 12px 24px;
+      background: linear-gradient(45deg, #ff6f61, #ff9068);
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, background 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .pay-button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #ff9068, #ff6f61);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 10px #ff6f61;
+      }
+      50% {
+        box-shadow: 0 0 25px #ff9068;
+      }
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img
+      src="https://raw.githubusercontent.com/RARExSIGMA2025/Capcut/main/IMG-20250829-200818-215.jpg"
+      alt="Profile Picture"
+      class="profile-pic"
+    />
+    <h1>RiyalX</h1>
+    <p class="tagline">Developer X Creator</p>
+  </header>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/soaledition" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+    </a>
+    <a href="https://t.me/RAYXP" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+    </a>
+  </div>
+
+  <div class="song-section">
+    <img
+      src="https://raw.githubusercontent.com/RARExSIGMA2025/Capcut/main/IMG-20250829-201701-693.jpg"
+      alt="Song Cover"
+    />
+    <audio controls>
+      <source src="https://raw.githubusercontent.com/RARExSIGMA2025/Capcut/main/SNUFF%206.mp4" type="audio/mp4" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <a href="upi://pay?pa=imayg@fam&pn=Riyal" class="pay-button">
+    💰 Pay Now
+  </a>
+
+  <footer>
+    &copy; 2025 RiyalX. Crafted with ❤️ by Developer X Creator.
+  </footer>
+</body>
+</html>
